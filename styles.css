@@ -324,9 +324,9 @@ body {
    ======================================== */
 .experiment__grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: center;
+    grid-template-columns: 0.7fr 1.5fr;
+    gap: 40px;
+    align-items: start;
 }
 
 .experiment__text p {
@@ -411,12 +411,55 @@ body {
     border-color: var(--color-dark);
 }
 
+/* Experiment Media */
+.experiment__media {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    min-width: 600px;
+}
+
+.media-item {
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    display: flex;
+    flex-direction: column;
+}
+
+.media-item__caption {
+    margin-top: auto;
+}
+
+.media-item__img,
+.media-item__video {
+    width: 100%;
+    height: 336px;
+    object-fit: cover;
+    display: block;
+}
+
+.media-item__caption {
+    padding: 12px 16px;
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+    text-align: center;
+    background: var(--color-lightest);
+}
+
+@media (max-width: 768px) {
+    .experiment__media {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* ========================================
    FILTRATION CARDS
    ======================================== */
 .filtration__cards {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 24px;
     margin-bottom: 60px;
 }
@@ -496,6 +539,10 @@ body {
 
 .diagram-cup--clean {
     background: var(--color-clean-water);
+}
+
+.diagram-cup--boil {
+    background: linear-gradient(135deg, #FF8A65 0%, #FF5722 100%);
 }
 
 .diagram-step span {
@@ -1312,7 +1359,7 @@ body.modal-open {
     }
     
     .filtration__cards {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
     
     .ecoquest__game {

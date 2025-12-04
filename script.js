@@ -125,6 +125,11 @@ function initEcoQuest() {
     
     calculateBtn.addEventListener('click', () => {
         updateResults(true);
+        // Scroll to results
+        const resultEl = document.getElementById('ecoquest-result');
+        if (resultEl) {
+            resultEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
     });
     
     function updateResults(animate) {

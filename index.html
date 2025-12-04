@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glacier Water Lab — SDG 6 Clean Water Project</title>
+    <title>ClearDrop — SDG 6 Clean Water Project</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
     <!-- HEADER -->
     <header class="header">
         <div class="container header__container">
-            <a href="#hero" class="logo">💧 Glacier Water Lab</a>
+            <a href="#hero" class="logo">💧 ClearDrop</a>
             <nav class="nav">
                 <ul class="nav__list">
                     <li><a href="#hero" class="nav__link">Home</a></li>
@@ -61,41 +61,28 @@
                 <div class="experiment__grid">
                     <div class="experiment__text">
                         <p>Glacier water often contains <strong>sediment and impurities</strong> that aren't visible to the naked eye.</p>
-                        <p>A simple physical filtration model was built using <strong>several cups</strong>, each filled with a different layer:</p>
+                        <p>A simple physical filtration model was built using <strong>several cups</strong>, each filled with a different filter layer:</p>
                         <ul class="experiment__list">
                             <li>⬛ Ballast stone / large stones</li>
                             <li>⚫ Small stones</li>
                             <li>🟡 Sand</li>
                             <li>⚪ Cotton</li>
                         </ul>
-                        <p>Water flows <strong>gravity-fed</strong> from one cup to the next. After filtration, the water is <strong>boiled for purification</strong>.</p>
-                        <p>Evaluation is visual only: clarity, color, odor, visible particles.</p>
+                        <p>Water flows <strong>gravity-fed</strong> from one cup to the next.</p>
+                        <p>After filtration, the water is <strong>🔥 boiled</strong> to kill bacteria and ensure safety.</p>
+                        <p>Evaluation is visual: clarity, color, odor, and visible particles.</p>
                     </div>
-                    <div class="experiment__visual">
-                        <div class="infographic infographic--setup">
-                            <div class="cup-tower">
-                                <div class="cup cup--1">
-                                    <span class="cup__label">Large Stones</span>
-                                    <div class="cup__content cup__content--stones-large"></div>
-                                </div>
-                                <div class="cup cup--2">
-                                    <span class="cup__label">Small Stones</span>
-                                    <div class="cup__content cup__content--stones-small"></div>
-                                </div>
-                                <div class="cup cup--3">
-                                    <span class="cup__label">Sand</span>
-                                    <div class="cup__content cup__content--sand"></div>
-                                </div>
-                                <div class="cup cup--4">
-                                    <span class="cup__label">Cotton</span>
-                                    <div class="cup__content cup__content--cotton"></div>
-                                </div>
-                                <div class="cup cup--final">
-                                    <span class="cup__label">Clean Water</span>
-                                    <div class="cup__content cup__content--water"></div>
-                                </div>
-                            </div>
-                            <div class="water-flow"></div>
+                    <div class="experiment__media">
+                        <div class="media-item">
+                            <img src="photo_2025-12-04_22-41-30.jpg" alt="Filtration system setup with cups on foam blocks" class="media-item__img">
+                            <p class="media-item__caption">Our DIY filtration system: cups with different filter layers arranged on foam blocks</p>
+                        </div>
+                        <div class="media-item">
+                            <video autoplay muted loop playsinline controls class="media-item__video">
+                                <source src="video_2025-12-04_22-43-41.mp4" type="video/mp4">
+                                Your browser does not support video.
+                            </video>
+                            <p class="media-item__caption">Watch the filtration process in action! See how dirty glacier water transforms.</p>
                         </div>
                     </div>
                 </div>
@@ -128,6 +115,11 @@
                         <h3 class="card__title">Stage 4: Cotton</h3>
                         <p class="card__text">Cotton provides final polishing, capturing very small residue particles.</p>
                     </div>
+                    <div class="card card--stage">
+                        <div class="card__icon">🔥</div>
+                        <h3 class="card__title">Stage 5: Boiling</h3>
+                        <p class="card__text">Boiling kills bacteria and microorganisms, making water safe to drink.</p>
+                    </div>
                 </div>
                 <div class="filtration__diagram">
                     <div class="diagram-flow">
@@ -157,8 +149,13 @@
                         </div>
                         <div class="diagram-arrow">→</div>
                         <div class="diagram-step">
+                            <div class="diagram-cup diagram-cup--boil">🔥</div>
+                            <span>Stage 5</span>
+                        </div>
+                        <div class="diagram-arrow">→</div>
+                        <div class="diagram-step">
                             <div class="diagram-cup diagram-cup--clean">💧</div>
-                            <span>Filtered</span>
+                            <span>Clean</span>
                         </div>
                     </div>
                 </div>
@@ -557,7 +554,7 @@
     <footer class="footer">
         <div class="container">
             <p class="footer__text">
-                💧 Glacier Water Filtration Project — Supports UN SDG 6 (Clean Water & Sanitation)
+                💧 ClearDrop Project — Supports UN SDG 6 (Clean Water & Sanitation)
             </p>
             <p class="footer__year">© 2025 — Educational Project</p>
         </div>
